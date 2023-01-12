@@ -18,7 +18,7 @@
 
 ![Image](https://i.imgur.com/6PrLfZu.png)
 
-## Congrats! You're logged in.
+#### Congrats! You're logged in.
 
 ---
 
