@@ -1,5 +1,5 @@
 # CSE 15L Lab Report 1
-## Leo Nguyen
+### Leo Nguyen (B260)
 ---
 ![Image](https://i.imgur.com/2GrZI4L.png)
 ![Image](https://i.imgur.com/6PrLfZu.png)
