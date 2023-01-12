@@ -26,4 +26,4 @@ System.out.println("ow");
 pickAtWedgie(rightHand);
 
 ```
-Sublime Text is '***better than***' VSCODE
+Sublime Text is `***better than***` VSCODE
