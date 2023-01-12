@@ -22,4 +22,16 @@
 
 ---
 
+## Inputting random commands and trying not to crash your computer
+
+Once you're logged in, you have access to the your CSE 15L files. I put in a bunch of letters. Luckily, my laptop is still currently within safe operating temperatures.
+
+Here are some commands you can use to navigate the file system:
+
+* cd {directory name} (changes the working directory)
+* ls (lists contents on the current directory)
+* pwd (outputs the path of the working directory to the console)
+* mkdir {folder name} (creates a folder)
+
+
 ![Image](https://i.imgur.com/7QYj8rO.png)
