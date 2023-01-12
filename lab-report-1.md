@@ -10,5 +10,16 @@
 
 ---
 
+## Signing in
+
+1. Open a terminal tab in VS Code.
+2. To log in, type `ssh cs15lwi23***@ieng6.ucsd.edu` into the terminal window, replacing the username with your own.
+3. Enter your password *at least* **twenty-seven times**. This is a safety feature that was implemented to prevent people from having fun.
+
 ![Image](https://i.imgur.com/6PrLfZu.png)
+
+## Congrats! You're logged in.
+
+---
+
 ![Image](https://i.imgur.com/7QYj8rO.png)
