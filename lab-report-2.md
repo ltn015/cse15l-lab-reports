@@ -9,9 +9,7 @@ This example shows a request which calls my `requestHandler` method. `requestHan
 
 <img width="1352" alt="Screen Shot 2023-01-30 at 4 14 38 PM" src="https://user-images.githubusercontent.com/122495687/215628041-b81d4b30-4306-41ab-9b65-c2b56d0146d2.png">
 
-1. sdjjfksl
-2. jlsdkf
-3. dsfkln
+At this point, `bigOlBoi` still carries the previous value of "YAH\n". This second request calls the `requestHandler` method again. This time, it updates `bigOlBoi` by adding "yeet\n" to it. The contents of `bigOlBoi` are then returned to be displayed on the server.
 
 ---
 
