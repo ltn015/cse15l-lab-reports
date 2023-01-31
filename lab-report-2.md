@@ -1,4 +1,4 @@
-# Remote Access Tutorial
+# B260 IS TOO SMELLY!!!
 ##### Leo Nguyen (B260)
 ---
 ## StringServer
@@ -13,8 +13,20 @@ At this point, `bigOlBoi` still carries the previous value of "YAH\n". This seco
 
 ---
 
-## Fixing bug
+## Fixing Buggy Code
 
+
+
+```
+  // Changes the input array to be in reversed order
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length/2; i += 1) {
+      int prev = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = prev;
+    }
+  }
+```
 1. fsdjl
 2. sdhfkl
 3. jfksdl
