@@ -28,33 +28,33 @@ returns:
 ./travel_guides/berlitz2/Athens-History.txt:In ancient Greek mythology Athens is named following a contest between Athena, goddess of wisdom, and Poseidon, god of the sea. Both had their eye on the prize real estate, so it was agreed that whoever could come up with the more useful gift for mortals would win. The half-human, half-serpent king of Athens, Cecrops, acted as arbiter. 
 ```
 
-While it's supposed to reverse the input array, the bounds for the integer `i` are too wide, causing the method copy the entire length of the array. Which leaves us with a mirrored doubling of a half of the array. 
-
+Example 2:
 ```
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
-	}
+grep -r -i "they ruled the seas, plundering ships at will"
 ```
 
-Despite the buggy code, this test method will run flawlessly because, since the length of the array is 1, there is nothing to be mirrored or copied.
-
-<img width="916" alt="Screen Shot 2023-01-30 at 5 08 48 PM" src="https://user-images.githubusercontent.com/122495687/215633123-686f9350-f908-4e76-95ef-bd58e3c4ce78.png">
-
-However, this test method fails.
-
+returns:
 ```
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3, 2 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 2, 3 }, input1);
-	}
+./travel_guides/berlitz2/Bahamas-Intro.txt:The islands of the Bahamas were claimed by the English, but hundreds of secret coves became home to pirates and smugglers who turned their backs on nationality to enter the brotherhood of buccaneers. They ruled the seas, plundering ships at will, and then spent their ill-gotten gains in the bars and brothels of Nassau town, the main settlement.
 ```
 
-<img width="922" alt="Screen Shot 2023-01-30 at 5 07 59 PM" src="https://user-images.githubusercontent.com/122495687/215633224-826188fc-4de1-43af-a00d-1a2c38b7d442.png">
+#### grep -c
+
+This can be useful for determining the importance of certain keywords by referencing their popularity in the file or directory.
+
+Example 1:
+```
+grep -r -c "Italy" travel_guides/berlitz1/WhatToItaly.txt
+```
+returns:
+```
+/WhatToItaly.txt
+travel_guides/berlitz1/WhatToItaly.txt:8
+```
+Example 2:
+```
+
+```
 
 #### Fixed Code
 
