@@ -5,7 +5,7 @@
 
 <img width="659" alt="Screen Shot 2023-03-13 at 9 59 12 PM" src="https://user-images.githubusercontent.com/122495687/224899326-b51ca5f5-f896-4aae-8df4-37b4c7191c70.png">
 
-Keys pressed: '<Ctrl>+<R><S><Enter>,<Password><Enter>'
+Keys pressed: '"<Ctrl>+<R><S><Enter>,<Password><Enter>"'
 
 The command 'ssh cse15lwi23adq@ieng6.ucsd.edu' logs me into the CSE remote account where I will be modifying the code later on.
 
