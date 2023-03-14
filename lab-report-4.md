@@ -5,9 +5,9 @@
 
 <img width="659" alt="Screen Shot 2023-03-13 at 9 59 12 PM" src="https://user-images.githubusercontent.com/122495687/224899326-b51ca5f5-f896-4aae-8df4-37b4c7191c70.png">
 
-Keys pressed: 'ctrl+r, s, enter, password, enter'
+Keys pressed: *ctrl+r, s, enter, password, enter*
 
-The command *ssh cse15lwi23adq@ieng6.ucsd.edu* logs me into the CSE remote account where I will be modifying the code later on.
+The command '''ssh cse15lwi23adq@ieng6.ucsd.edu''' logs me into the CSE remote account where I will be modifying the code later on.
 
 <img width="1352" alt="Screen Shot 2023-01-30 at 4 14 38 PM" src="https://user-images.githubusercontent.com/122495687/215628041-b81d4b30-4306-41ab-9b65-c2b56d0146d2.png">
 
