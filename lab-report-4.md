@@ -7,7 +7,7 @@
 
 Keys pressed: *ctrl+r, s, enter, password, enter*
 
-The command '''ssh cse15lwi23adq@ieng6.ucsd.edu''' logs me into the CSE remote account where I will be modifying the code later on.
+The command ```ssh cse15lwi23adq@ieng6.ucsd.edu``` logs me into the CSE remote account where I will be modifying the code later on.
 
 <img width="1352" alt="Screen Shot 2023-01-30 at 4 14 38 PM" src="https://user-images.githubusercontent.com/122495687/215628041-b81d4b30-4306-41ab-9b65-c2b56d0146d2.png">
 
