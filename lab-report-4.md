@@ -7,75 +7,40 @@
 
 Keys pressed: *ctrl+r, s, enter, password, enter*
 
+The initial shortcut, *ctrl+r*, allows me to search my command history to find the command I need. The *s* is to search for the ssh command.
+
 The command ```ssh cse15lwi23adq@ieng6.ucsd.edu``` logs me into the CSE remote account where I will be modifying the code later on.
 
-<img width="1352" alt="Screen Shot 2023-01-30 at 4 14 38 PM" src="https://user-images.githubusercontent.com/122495687/215628041-b81d4b30-4306-41ab-9b65-c2b56d0146d2.png">
+<img width="1352" alt="Screen Shot 2023-03-13 at 9 59 43 PM" src="https://user-images.githubusercontent.com/122495687/224902867-58a4fdb9-ab05-4788-967d-69bc2dd54af9.png">
 
-At this point, `bigOlBoi` still carries the previous value of "YAH\n". This second request calls the `requestHandler` method again. This time, it updates `bigOlBoi` by adding "yeet\n" to it. The contents of `bigOlBoi` are then returned to be displayed on the server.
+Keys pressed: *ctrl+r, g, i, t, @, enter*
 
+I again use *ctrl+r* to search for a command. I typed "git@" to find the command I needed. Then, *enter* runs the command.
+
+The command ```git clone git@github.com:ltn015/lab7.git && cd lab7 && javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java && java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests``` is a combination of many commands that allows me to save time by putting them together. First, it clones my fork of the lab7 repository into the home directory. Then, it navigates into the lab7 directory. It then compiles all java files in the directory. Lastly, it runs the ListExamplesTests file which runs the Junit tests.
+
+<img width="467" alt="Screen Shot 2023-03-13 at 10 01 57 PM" src="https://user-images.githubusercontent.com/122495687/224904109-f9b1c2ab-f0fd-429e-a82d-89dcedca74e1.png">
+
+Keys pressed: *ctrl+r, n, enter*
+
+I searched again for the "nano" command I needed and pressed enter to run the command.
+
+The command ```nano +43,13 ListExamples.java``` allows me to edit the ListExamples.java file.
+
+<img width="1352" alt="Screen Shot 2023-03-13 at 10 00 43 PM" src="https://user-images.githubusercontent.com/122495687/224904408-e280800a-9add-4a16-b2a8-3d3abdde6e63.png">
+
+Keys pressed: *ctrl+x, down (until at the right row), right (until at the right column), backspace, 2, ctrl+x, y, enter*
+
+The first keypresses, *ctrl+x* allows me to edit ListExamples.java rather than creating a new text file. Then, I used the arrow keys to navigate to the incorrect code and corrected it. Then, *ctrl+x* again allows me to exit and save the file. Then, when prompted if I want to save the file, *y* and *enter* save the file.
+
+<img width="1352" alt="Screen Shot 2023-03-13 at 10 01 41 PM" src="https://user-images.githubusercontent.com/122495687/224904887-9100f026-bb46-4f1c-b64a-ccb4214550f8.png">
+
+Keys pressed: *ctrl+r, g, enter*
+
+I again use *ctrl+r* to search for commands as well as *g* as the keyword, then I use *enter* to run the command.
+
+The command ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java && java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests && git add ListExamples.java && git commit -m "finished" && git push``` is also a combination of many commands. First, it compiles all java files in the directory again, after the edit. Then, it runs the tests again. Then, it saves the updated ListExamples.java file and commits and pushes the changes with the message "finished".
 ---
-
-## Fixing Buggy Code
-
-#### This method does not work correctly
-
-```
-  // Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
-  }
-```
-
-While it's supposed to reverse the input array, the bounds for the integer `i` are too wide, causing the method copy the entire length of the array. Which leaves us with a mirrored doubling of a half of the array. 
-
-```
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3 }, input1);
-	}
-```
-
-Despite the buggy code, this test method will run flawlessly because, since the length of the array is 1, there is nothing to be mirrored or copied.
-
-<img width="916" alt="Screen Shot 2023-01-30 at 5 08 48 PM" src="https://user-images.githubusercontent.com/122495687/215633123-686f9350-f908-4e76-95ef-bd58e3c4ce78.png">
-
-However, this test method fails.
-
-```
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3, 2 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 2, 3 }, input1);
-	}
-```
-
-<img width="922" alt="Screen Shot 2023-01-30 at 5 07 59 PM" src="https://user-images.githubusercontent.com/122495687/215633224-826188fc-4de1-43af-a00d-1a2c38b7d442.png">
-
-#### Fixed Code
-
-```
-  // Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length/2; i += 1) {
-      int prev = arr[i];
-      arr[i] = arr[arr.length - i - 1];
-      arr[arr.length - i - 1] = prev;
-    }
-  }
-```
-
-This change fixes the bug because, instead of having to iterate through the entire array and accidentally duplicate values, this method now tracks each opposite value and uses it instantly rather than accidentally overwriting it.
-
----
-
-## What I Learned
-
-I learned that B260 is the smelliest class I have in my current schedule. I also learned how to create Junit tests. I also learned how to lift the chairs in the classroom. I also learned I can get from the CSE building to YORK in about 12 minutes.
 
    
    
