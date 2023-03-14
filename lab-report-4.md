@@ -40,8 +40,6 @@ Keys pressed: *ctrl+r, g, enter*
 I again use *ctrl+r* to search for commands as well as *g* as the keyword, then I use *enter* to run the command.
 
 The command ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java && java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests && git add ListExamples.java && git commit -m "finished" && git push``` is also a combination of many commands. First, it compiles all java files in the directory again, after the edit. Then, it runs the tests again. Then, it saves the updated ListExamples.java file and commits and pushes the changes with the message "finished".
----
-
    
    
    
